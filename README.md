@@ -1,8 +1,8 @@
 # ml-notebooks
-Please refer to [Simple MxNet Server Lab](/changli3/ml-notebooks/mx-mxnet) for starting an AWS Deep Learning instance.
+Please refer to [Simple MxNet Server Lab](https://github.com/changli3/mx-mxnet) for starting an AWS Deep Learning instance.
 
 ### Step 1. Lauch AWS VM
-I have an AWS CF template file [cf.json](/changli3/ml-notebooks/mx-mxnet/cf.json) here. You can launch it in the AWS console, or use AWS CLI like below. Remember to download the tempalte file to your computer and change parameters to proper values -
+I have an AWS CF template file [cf.json](https://github.com/changli3/mx-mxnet/cf.json) here. You can launch it in the AWS console, or use AWS CLI like below. Remember to download the tempalte file to your computer and change parameters to proper values -
 ```
 aws cloudformation deploy --template-file cf.json --stack-name test-ml --parameter-overrides InstanceSubnet=subnet-2b976000 InstanceSecurityGroup=sg-58e1fc3d KeyPairName=TreaEBSLab
 ```
