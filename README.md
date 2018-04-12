@@ -34,7 +34,7 @@ http://PRIVATEIP:8081/notebooks/tutorials/MXNet/ndarray.ipynb. Now you can run t
 You can kill the server by CTRL+C.
 
 ### Step 5. Install JupyterLab
-I like JupyterLab better. If you want to use it, install by running the following command: 
+##### I like JupyterLab better. If you want to use it, install by running the following command: 
 ```
 curl -s -L https://raw.githubusercontent.com/changli3/ml-notebooks/master/install-jupyterlab.sh | bash
 ```
@@ -51,10 +51,10 @@ JupyterLab has a dashboard screen-
 ![dashboard](https://raw.githubusercontent.com/changli3/ml-notebooks/master/jl-dash.JPG "dashboard")
 
 
-You can go through the same ndarray sample as previous, or here you can go to the bokeh samples (bokeh-notebooks then tutorial) and run through the
+You can go through the same ndarray sample as previous, or here you can go to the bokeh samples (bokeh-notebooks then tutorial) and run through the tutorial:
 ![bokeh tutorial](https://raw.githubusercontent.com/changli3/ml-notebooks/master/bokeh-tutorial.JPG "bokeh tutorial")
 
-You can also select the theme you like, and test more complicated samples (e.g., tutorials then TensorFlow then keras-tensorflow-mnist.ipynb). It will take some time to run through the 469 epoches of 
+You can also select the theme you like, and test more complicated samples (e.g., tutorials then TensorFlow then keras-tensorflow-mnist.ipynb). It will take some time to run through the 469 epoches of training -
 ![keras-tensorflow-mnist training](https://raw.githubusercontent.com/changli3/ml-notebooks/master/training.JPG "keras-tensorflow-mnist training")
 
 
