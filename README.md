@@ -21,9 +21,17 @@ Run the following commands -
 ```
 export PRIVATEIP=`curl http://169.254.169.254/latest/meta-data/local-ipv4`
 source activate python3
-jupyter notebook --ip=$PRIVATEIP --port 8081 &
+jupyter notebook --ip=$PRIVATEIP --port 8081
 ```
 Once the server starts. Browse to http://PRIVATEIP:8081 and enter password: jupyter.
+![Login Screen](https://raw.githubusercontent.com/changli3/ml-notebooks/master/jb-login.JPG "Login Screen")
+
+
+After login, navigate to /tutorials/MXNet/ndarray.ipynb via the file structure (or type in the address)
+http://PRIVATEIP:8081/notebooks/tutorials/MXNet/ndarray.ipynb. Now you can run through those code to test the MxNet NdArray example.
+![NdArray Screen](https://raw.githubusercontent.com/changli3/ml-notebooks/master/ndarray.JPG "NdArray Screen")
+
+You can kill the server by CTRL+C.
 
 ### Step 5. Install JupyterLab
 I like JupyterLab better. If you want to use it, install by running the following command: 
@@ -31,11 +39,23 @@ I like JupyterLab better. If you want to use it, install by running the followin
 curl -s -L https://raw.githubusercontent.com/changli3/ml-notebooks/master/install-jupyterlab.sh | bash
 ```
 
-Once it is installed, start it by -
+The script also download bokeh sample and bokeh sample data. You can run through them via the browser UI. Once it is installed, start JupyterLab by -
 ```
-PRIVATEIP=`curl http://169.254.169.254/latest/meta-data/local-ipv4`
-jupyter lab --no-browser --ip=$PRIVATEIP --port 8080 &
+export PRIVATEIP=`curl http://169.254.169.254/latest/meta-data/local-ipv4`
+jupyter lab --no-browser --ip=$PRIVATEIP --port 8080
 ```
 Wait for the server starts and then browse to http://PRIVATEIP:8080 and enter password: jupyter. 
+![Login Screen](https://raw.githubusercontent.com/changli3/ml-notebooks/master/jl-login.JPG "Login Screen")
 
-The script also download bokeh sample and bokeh sample data. You can run through them via the browser UI.
+JupyterLab has a dashboard screen-
+![dashboard](https://raw.githubusercontent.com/changli3/ml-notebooks/master/jl-dash.JPG "dashboard")
+
+
+You can go through the same ndarray sample as previous, or here you can go to the bokeh samples (bokeh-notebooks then tutorial) and run through the
+![bokeh tutorial](https://raw.githubusercontent.com/changli3/ml-notebooks/master/bokeh-tutorial.JPG "bokeh tutorial")
+
+You can also select the theme you like, and test more complicated samples (e.g., tutorials then TensorFlow then keras-tensorflow-mnist.ipynb). It will take some time to run through the 469 epoches of 
+![keras-tensorflow-mnist training](https://raw.githubusercontent.com/changli3/ml-notebooks/master/training.JPG "keras-tensorflow-mnist training")
+
+
+
