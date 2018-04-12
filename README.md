@@ -13,7 +13,7 @@ Once the CF template completed, SSH to it with username "ubuntu" and the key use
 ### Step 3. Set Jupyter Password
 Run the following command -
 ```
-curl -s -L https://raw.githubusercontent.com/changli3/ml-notebooks/master/set-jupyter-pass.sh | sudo bash
+curl -s -L https://raw.githubusercontent.com/changli3/ml-notebooks/master/set-jupyter-pass.sh | bash
 ```
 
 ### Step 4. Launch Jupyter
@@ -28,7 +28,7 @@ Once the server starts. Browse to http://PRIVATEIP:8081 and enter password: jupy
 ### Step 5. Install JupyterLab
 I like JupyterLab better. If you want to use it, install by running the following command: 
 ```
-curl -s -L https://raw.githubusercontent.com/changli3/ml-notebooks/master/install-jupyterlab.sh | sudo bash
+curl -s -L https://raw.githubusercontent.com/changli3/ml-notebooks/master/install-jupyterlab.sh | bash
 ```
 
 Once it is installed, start it by -
